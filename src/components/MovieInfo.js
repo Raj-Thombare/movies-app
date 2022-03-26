@@ -1,13 +1,11 @@
 
-const MovieInfo = (props) => {
-  const data = props.info;
-  console.log(data)
+const MovieInfo = ({info}) => {
   return (
     <div>
       <p>
-        {data[0].title} by {data[0].director} was released on {data[0].year}
+        {info.title} by {info.director} was released on {info.year}
       </p>
-      <p>Rating: {data[0].rating}</p>
+      <p>Rating: {info.rating}</p>
     </div>
   );
 };
