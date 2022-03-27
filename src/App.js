@@ -1,9 +1,12 @@
 import React from 'react';
 import MovieComponent from './components/MovieComponent';
+import './App.css'
 
 function App() {
   return (
-    <MovieComponent />
+    <div className='App'>
+      <MovieComponent />
+    </div>
   );
 }
 
