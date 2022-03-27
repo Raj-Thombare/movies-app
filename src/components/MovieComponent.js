@@ -1,12 +1,17 @@
 import React from 'react';
-import MoviePoster from './MoviePoster'
+import MovieData from './MovieData'
+import {movies} from '../data/movies'
 import '../App.css'
 
-const MovieComponent = () => {
+const MovieComponent = (props) => {
   return (
     <div className="App">
       <h1>Movies</h1>
-      <MoviePoster />
+      {
+        movies.map((movie) =>(
+          <MovieData key={movie.id} data={movie}/>
+        ))
+      }
     </div>
   );
 };
